@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./public/static/style.css && vite",
-    "build": "tailwindcss --minify -i ./src/input.css -o ./public/static/style.css && vite build",
+    "build": "tailwindcss --minify -i ./src/input.css -o ./dist/static/style.css && vite build",
     "preview": "wrangler pages dev dist",
     "deploy": "$npm_execpath run build && wrangler pages deploy dist"
   },
