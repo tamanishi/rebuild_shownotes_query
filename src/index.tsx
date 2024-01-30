@@ -30,7 +30,7 @@ app.get('/', (c) => {
   return c.render(<div class="container mx-10 my-auto">
     <h1 class="my-4 text-4xl">Rebuild Shownote Search</h1>
     <input class="pl-2 w-96 h-10 border-2 rounded-xl" type="search"
-      name="query" placeholder="Type To Search Epiosodes, Shownotes..."
+      name="query" placeholder="Type To Search Episodes, Shownotes..."
       hx-post="/search"
       hx-trigger="load, input changed delay:500ms"
       hx-target="#search-results" />
